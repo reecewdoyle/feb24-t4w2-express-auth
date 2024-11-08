@@ -1,3 +1,7 @@
+require("dotenv").config();
+// const dotenv = require('dotenv');
+// dotenv.config();
+
 // module.exports = { app }
 const { dbConnect } = require("./functions/dbFunctions.js");
 const {app} = require("./server.js");
@@ -5,9 +9,6 @@ const {app} = require("./server.js");
 // module.exports = app;
 // const app = require()
 
-require("dotenv").config();
-// const dotenv = require('dotenv');
-// dotenv.config();
 
 const PORT = process.env.PORT || 8080;
 
